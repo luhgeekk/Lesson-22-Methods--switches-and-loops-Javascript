@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <script>
 var str ="BeAutiFuL";
 document.write(str.toUpperCase());
@@ -16,8 +17,16 @@ document.write("<br>")
 var patt = new RegExp("z");
 var res = patt.test(str);
 document.write(res);
-
-
+</script>
+<p id="demo"></p>
+<script>
+var birds = ["Crows","Starlings","Parrots","Magpies","Sparrows"];
+var text = "";
+var i;
+for (i=0; i < birds.length; i++) {
+text += birds[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
 </script>
 <body>
     
